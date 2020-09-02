@@ -1,0 +1,119 @@
+html{
+    height: auto;
+}
+
+body{
+    height: 100vh;
+    background-image:linear-gradient(to top right,#92b928,#27a86c,#1c76c0b9);;
+}
+
+#todo-container{
+    background-image:linear-gradient(to top right,#3dad3d,#3aacac);
+    width: 30%;
+    height:auto;
+    margin:0px auto;
+    margin-top: 6%;
+    border: 10px solid #3a79ac;
+    border-radius: 30px;
+}
+
+#heading{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    color: #5c0ba8b2;
+    text-shadow: 2px 2px 3px #00ffc8b9;
+}
+
+#etodo{
+    margin-top:10%;
+    margin-left:20%;
+    outline:none;
+    border:none; 
+    width:60%;
+    height: 40px;
+    border-radius:15px;
+}
+
+.buttons{
+    margin-left: 9%;
+    margin-top: 8%;
+    border-radius: 20px;
+    outline:none;
+    border:none; 
+    font-size: 90%;
+    width: 40%;
+    height: 40px;
+    background-color: #700eb183;
+    color: snow;
+}
+
+#removetodo{
+    margin-left: 5px;
+}
+
+#removeall{
+    margin-top: 15px;
+    margin-left: 30%;
+}
+
+.checklabel{
+    margin-left: 10%;
+    margin-right:20px;
+    width: 20px;
+    height:20px;
+}
+
+.list{
+    margin-top: 40px;
+    cursor: pointer;
+}
+label{
+    font-size: 130%;
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+    height:30px;
+    margin-top: 10px;
+}
+
+input[type="checkbox"]:checked + label{
+    text-decoration: line-through;
+}
+
+
+@media only screen and (max-width:420px){
+    #todo-container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:270px){
+    #todo-container{
+        width: 100%;
+    }
+    .buttons{
+        font-size:60% ;
+    }
+    .checklabel{
+        width:10px;
+        height: 10px;
+        margin-right:10px;
+    }
+    label{
+        font-size: 80%;
+    }
+}   
+
+@media only screen and (max-width:690px){
+    .buttons{
+        font-size:60% ;
+    }
+}
+
+@media only screen and (max-width:870px){
+    #todo-container{
+        width: 80%;
+    }   
+}
